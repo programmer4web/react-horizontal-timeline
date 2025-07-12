@@ -5,6 +5,7 @@ const terser = require('@rollup/plugin-terser');
 const peerDepsExternal = require('rollup-plugin-peer-deps-external');
 const typescript = require('@rollup/plugin-typescript');
 const json = require('@rollup/plugin-json');
+const postcss = require('rollup-plugin-postcss');
 const pkg = require('./package.json');
 
 module.exports = [
@@ -29,6 +30,12 @@ module.exports = [
       
       // Handle JSON files
       json(),
+      
+      // Handle CSS files
+      postcss({
+        extract: true,
+        minimize: true
+      }),
       
       // Resolve node_modules
       resolve({
@@ -82,6 +89,13 @@ module.exports = [
     plugins: [
       peerDepsExternal(),
       json(),
+      
+      // Handle CSS files for demo too
+      postcss({
+        extract: false, // Inline CSS for demo
+        minimize: true
+      }),
+      
       resolve({
         extensions: ['.js', '.jsx', '.ts', '.tsx']
       }),
