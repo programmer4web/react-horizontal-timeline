@@ -1,3 +1,4 @@
+import './output.css';
 import HorizontalTimeline from './HorizontalTimeline';
 
 const TimelineDemo = () => {
