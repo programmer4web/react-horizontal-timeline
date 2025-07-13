@@ -1,6 +1,6 @@
 {
   "name": "@evaficy/react-horizontal-timeline",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Interactive React component that displays events in a beautiful horizontal timeline format.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
