@@ -15,3 +15,12 @@ Features\
 🧩 Custom Components: Embed custom React components within timeline cards\
 ⚡ Smooth Animations: CSS transitions and hover effects\
 ♿ Accessibility: Keyboard navigation and screen reader support
+
+## Styling
+
+**Important for Server-Side Rendering and Storybook:**
+When using this component with server-side rendering (SSR) or in Storybook, you must import the CSS file manually:
+
+```javascript
+import 'react-horizontal-timeline/dist/index.esm.css';
+```
