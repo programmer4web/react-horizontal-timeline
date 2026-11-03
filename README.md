@@ -104,5 +104,5 @@ Type declarations ship with the package (`HorizontalTimelineProps`, `TimelineEve
 
 ## Changelog
 
-- **1.1.0** - Stylesheet is now built from the component source on every release; TypeScript declarations included; screen reader labels on navigation buttons; `lucide-react` declared as a peer dependency (it was always required); unused Material UI peer dependencies and the build tool runtime dependency removed; build tooling updated.
+- **1.1.0** - Stylesheet is now built from the component source on every release; TypeScript declarations included; navigation arrows use `accentColor` and sit beside the cards instead of over them; screen reader labels on navigation buttons; `lucide-react` declared as a peer dependency (it was always required); unused Material UI peer dependencies and the build tool runtime dependency removed; build tooling updated.
 - **1.0.8** - Funding link; styling notes in README.

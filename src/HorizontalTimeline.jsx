@@ -128,7 +128,8 @@ const HorizontalTimeline = ({
 
   return (
     <div
-      className="w-full p-6 rounded-lg overflow-hidden relative"
+      // Wider side padding when arrows are shown, so they sit beside the cards instead of over them
+      className={`w-full py-6 ${showArrows ? 'px-14' : 'px-6'} rounded-lg overflow-hidden relative`}
       style={{ backgroundColor }}
     >
       {/* Navigation Arrows */}
@@ -138,7 +139,8 @@ const HorizontalTimeline = ({
             onClick={handlePrevious}
             disabled={currentIndex === 0}
             aria-label="Previous event"
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-white border rounded-full p-2 shadow-md hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            style={{ color: accentColor, borderColor: accentColor }}
           >
             <ChevronLeft size={24} />
           </button>
@@ -146,7 +148,8 @@ const HorizontalTimeline = ({
             onClick={handleNext}
             disabled={currentIndex === events.length - 1}
             aria-label="Next event"
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-white border rounded-full p-2 shadow-md hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            style={{ color: accentColor, borderColor: accentColor }}
           >
             <ChevronRight size={24} />
           </button>
