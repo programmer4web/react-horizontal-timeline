@@ -137,6 +137,7 @@ const HorizontalTimeline = ({
           <button
             onClick={handlePrevious}
             disabled={currentIndex === 0}
+            aria-label="Previous event"
             className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <ChevronLeft size={24} />
@@ -144,6 +145,7 @@ const HorizontalTimeline = ({
           <button
             onClick={handleNext}
             disabled={currentIndex === events.length - 1}
+            aria-label="Next event"
             className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <ChevronRight size={24} />
@@ -242,6 +244,7 @@ const HorizontalTimeline = ({
                 {event.description && (
                   <button
                     onClick={() => toggleExpanded(index)}
+                    aria-expanded={expandedCards.has(index)}
                     className="flex items-center gap-2 text-sm mb-3 px-3 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100"
                     style={{ color: accentColor }}
                   >
@@ -298,6 +301,8 @@ const HorizontalTimeline = ({
             <button
               key={index}
               onClick={() => handleBulletClick(index)}
+              aria-label={`Go to event ${index + 1} of ${events.length}`}
+              aria-current={index === currentIndex ? 'true' : undefined}
               className="w-3 h-3 rounded-full transition-all duration-200 hover:scale-125"
               style={{
                 backgroundColor: index === currentIndex ? accentColor : 'rgba(0, 0, 0, 0.3)'

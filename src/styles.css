@@ -1,0 +1,4 @@
+/* Tailwind input for dist/index.esm.css (built by "build:css").
+   Only the classes used in src/ are generated. */
+@import "tailwindcss" source(none);
+@source "./";

@@ -1,5 +1,5 @@
 // Main package exports
-import './output.css'; // Import Tailwind CSS
+// Styles ship separately: import '@evaficy/react-horizontal-timeline/dist/index.esm.css'
 export { default as HorizontalTimeline } from './HorizontalTimeline.jsx';
 export { default as TimelineDemo } from './TimelineDemo.jsx';
   
