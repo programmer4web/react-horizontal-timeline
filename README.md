@@ -106,3 +106,9 @@ Type declarations ship with the package (`HorizontalTimelineProps`, `TimelineEve
 
 - **1.1.0** - Stylesheet is now built from the component source on every release; TypeScript declarations included; navigation arrows use `accentColor` and sit beside the cards instead of over them; screen reader labels on navigation buttons; `lucide-react` declared as a peer dependency (it was always required); unused Material UI peer dependencies and the build tool runtime dependency removed; build tooling updated.
 - **1.0.8** - Funding link; styling notes in README.
+
+---
+
+Made by [EVAFICY](https://evaficy.com/?utm_source=oss&utm_medium=readme&utm_campaign=react-horizontal-timeline): custom React & Node.js development, full-stack applications and AI-powered QA with [Evaficy Smart Test](https://app.evaficy.com/?utm_source=oss&utm_medium=readme&utm_campaign=react-horizontal-timeline). Need a new component or a full project built? [Get in touch](https://evaficy.com/contact-evaficy/?utm_source=oss&utm_medium=readme&utm_campaign=react-horizontal-timeline).
+
+More open-source components: [live demos](https://components.evaficy.com) · [GitHub](https://github.com/programmer4web) · [npm](https://www.npmjs.com/~evaficy)
